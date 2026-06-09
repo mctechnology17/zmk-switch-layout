@@ -1,0 +1,19 @@
+# Copyright (c) 2026 Marcos Chow Castro
+# SPDX-License-Identifier: MIT
+
+description: Persistent switch layout mode behavior
+
+compatible: "zmk-switch-layout,behavior-switch-layout-mode"
+
+include: one_param.yaml
+
+properties:
+  layout-count:
+    type: int
+    required: true
+    description: Number of selectable keyboard-side layouts.
+  default-layout:
+    type: int
+    required: false
+    default: 0
+    description: Layout used before saved settings are loaded.

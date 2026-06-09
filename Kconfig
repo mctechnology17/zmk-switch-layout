@@ -1,0 +1,17 @@
+# Copyright (c) 2026 Marcos Chow Castro
+# SPDX-License-Identifier: MIT
+
+config ZMK_SWITCH_LAYOUT_STATE
+    bool
+    default y
+    depends on DT_HAS_ZMK_SWITCH_LAYOUT_BEHAVIOR_SWITCH_LAYOUT_MODE_ENABLED && SETTINGS
+
+config ZMK_SWITCH_LAYOUT_MODE_BEHAVIOR
+    bool
+    default y
+    depends on ZMK_SWITCH_LAYOUT_STATE
+
+config ZMK_SWITCH_LAYOUT_KEY_BEHAVIOR
+    bool
+    default y
+    depends on ZMK_SWITCH_LAYOUT_STATE && DT_HAS_ZMK_SWITCH_LAYOUT_BEHAVIOR_SWITCH_LAYOUT_KEY_ENABLED

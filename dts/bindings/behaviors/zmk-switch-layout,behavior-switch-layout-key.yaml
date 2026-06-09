@@ -1,0 +1,14 @@
+# Copyright (c) 2026 Marcos Chow Castro
+# SPDX-License-Identifier: MIT
+
+description: Keyboard-side layout key selector behavior
+
+compatible: "zmk-switch-layout,behavior-switch-layout-key"
+
+include: zero_param.yaml
+
+properties:
+  bindings:
+    type: phandle-array
+    required: true
+    description: One binding per layout, in the same order used by switch-layout-mode.
