@@ -1,0 +1,25 @@
+Changelog of zmk-switch-layout.
+https://github.com/mctechnology17/zmk-switch-layout/blob/main/CHANGELOG.txt
+
+How the versions work:
+- vX.Y.Z          released from the branch `main`
+- v0.0.3.N        fixes for ZMK v0.3, from the branch `zmk-v0.3`
+- New work is developed on the branch `dev`
+
+# FEATURES NEXT (not released yet)
+=======================================
+# CHANGES
+- [x] CHANGELOG.txt added
+
+# FEATURES v0.0.3 (Nov 18, 2026) · ZMK v0.3
+=======================================
+First tagged version: snapshot of everything published until this date. Tested with ZMK v0.3.
+
+# NEW FEATURES
+- [x] `switch-layout-key` behavior: switch a logical layout inside the keyboard while it is running
+- [x] `NEXT`, `PREV`, `DEFAULT` and direct indexes to switch and restore layouts
+- [x] Each `switch-layout-key` accepts any ZMK behavior valid as a binding, modifiers included
+- [x] The selected layout is stored with ZMK settings, so it survives power off and reboot
+
+# FIXES
+- [x] Include directory added to the CMake configuration, thanks @carlosedp (#2)
